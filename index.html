@@ -3,8 +3,8 @@
 <head>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
-    <title>Galeria de Imagens</title>
-    <h1><span class="green-text">Galeria</span> <span class="purple-text">GIFs</span></h1>
+    <title>Galeria</title>
+    <h1><span class="green-text">GALERIA DE GIFS</span></h1>
 </head>
 <body>
   <h2 class="category">Casa e Cozinha</h2>
@@ -123,11 +123,7 @@
     .green-text {
     color: #19c161;
     }
-
-    .purple-text {
-    color: #2e3192;
-    }
-
+    
     .gallery {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -181,5 +177,12 @@
     /* Estilizando o thumb quando estiver sendo arrastado */
     ::-webkit-scrollbar-thumb:hover {
     background: #555;
+    }
+
+            /* Media Query para 2 colunas de GIFs abaixo de 768px */
+        @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 </style>
